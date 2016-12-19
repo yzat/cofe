@@ -6,7 +6,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Главная</title>
-<!--[if IE]><script src="js/html5.js"></script><![endif]-->
+<!--[if IE]><script src="../js/html5.js"></script><![endif]-->
 
 <!-- favicon -->
 <link href="favicon.ico" rel="shortcut icon">
@@ -16,7 +16,7 @@
 <link href="../css/all.css" rel="stylesheet" media="screen">
 <link href="../css/bootstrap.min.css" rel="stylesheet" media="screen">
 
-<!--[if lte IE 8]><link rel="stylesheet" href="css/ie8.css" media="screen, projection"><![endif]-->
+<!--[if lte IE 8]><link rel="stylesheet" href="../css/ie8.css" media="screen, projection"><![endif]-->
 
 <!-- Jquery library -->
 <script src="../js/jquery_min.js"></script>

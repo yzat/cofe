@@ -141,7 +141,10 @@
 				<h4 class="modal-title">Avtorizasia</h4>
 			</div>
 			<div class="modal-body">
-				<form id="form_admin_data" action="javascript:void(0);" onSubmit="javascript:avtorizasia(this);return false;" role="form">
+<!--onSubmit отправка данных формы на функцию 'avtorizasia' в файле function_form_view.js (функция validate)
+	(javascript:avtorizasia(this);return false;)
+-->
+				<form id="form_admin_data" name="form_admin" action="javascript:void(0);" onSubmit="return validate_form()" role="form">
 					<div class="form-group">
 						<label for="usr">login:</label>
 						<input type="text" name="login" class="form-control" id="login">

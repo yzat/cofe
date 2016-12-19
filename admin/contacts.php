@@ -1,38 +1,43 @@
-﻿<!DOCTYPE HTML>
+﻿<?php
+	require __DIR__."/../header.php";
+	$contact=$db->get('contacts');
+?>
+<!DOCTYPE HTML>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Контакты</title>
-<!--[if IE]><script src="js/html5.js"></script><![endif]-->
+	<meta charset="UTF-8">
+	<title>Контакты</title>
+	<!--[if IE]><script src="../js/html5.js"></script><![endif]-->
 
-<!-- favicon -->
-<link href="favicon.ico" rel="shortcut icon">
+	<!-- favicon -->
+	<link href="../favicon.ico" rel="shortcut icon">
 
-<!-- Main style -->
-<link href="../css/widgets.css" rel="stylesheet" media="screen">
-<link href="../css/all.css" rel="stylesheet" media="screen">
+	<!-- Main style -->
+	<link href="../css/widgets.css" rel="stylesheet" media="screen">
+	<link href="../css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<link href="../css/all.css" rel="stylesheet" media="screen">
+	
+	<!--[if lte IE 8]><link rel="stylesheet" href="../css/ie8.css" media="screen, projection"><![endif]-->
 
-<!--[if lte IE 8]><link rel="stylesheet" href="css/ie8.css" media="screen, projection"><![endif]-->
-
-<!-- Jquery library -->
-<script src="../js/jquery-1.8.2.min.js"></script>
-<!-- UI -->
-<script src="../js/jquery-ui-1.9.0.custom.min.js"></script>
-<!-- Widgets -->
-<script src="../js/widgets.js"></script>
-<!-- Yandex map -->
-<script src="http://api-maps.yandex.ru/2.0/?load=package.standard&mode=debug&lang=ru-RU" ></script>
-<!-- Main functions -->
-<script src="../js/functions.js"></script>
+	<!-- Jquery library -->
+	<script src="../js/jquery-1.8.2.min.js"></script>
+	<!-- UI -->
+	<script src="../js/jquery-ui-1.9.0.custom.min.js"></script>
+	<!-- Widgets -->
+	<script src="../js/widgets.js"></script>
+	<!-- Yandex map -->
+<!--	<script src="http://api-maps.yandex.ru/2.0/?load=package.standard&mode=debug&lang=ru-RU" ></script>-->
+	<!-- Main functions -->
+	<script src="../js/functions.js"></script>
 </head>
 <body>
 <!-- wrapper -->
 <div class="wrapper">
 	<!-- header -->
-	<header class="header">
+	<header class="header" ">
 		<div class="max-wrap">
 			<div class="top-line">
-				<div class="logo"><a href=""><img src="../img/logo.png" alt=""/></a></div>
+				<div class="logo"><a href="index.php"><img src="../img/logo.png" alt=""/></a></div>
 				<nav class="nav">
 					<ul class="nav-list">
 						<li><a href="index.php">о компании</a></li>
@@ -40,6 +45,13 @@
 						<li><a href="about2.php">наш кофе</a></li>
 						<li><a href="horeca.php">Horeca</a></li>
 						<li class="active"><a href="contacts.php">Контакты</a></li>
+						<li>
+							<a href="logout.php">
+								<button class=" btn-info">
+									<span class="glyphicon glyphicon-log-out"></span>
+								</button>
+							</a>
+						</li>
 					</ul>
 				</nav>
 			</div>

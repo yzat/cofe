@@ -1,5 +1,5 @@
-/* inport fonts */
-@import url('fonts.css');
+/* import fonts */
+@import url('../css/fonts.css');
 
 /* normalize.css */
 article,
@@ -133,6 +133,9 @@ body {
 body, html {
 	height:100%;
 	width:100%;
+}
+header{
+	box-sizing:content-box;
 }
 header, nav, section, article, aside, footer {display: block;}
 input[type=button], input[type=submit], input[type=radio], input[type=checkbox], button, select{cursor:pointer;}
@@ -570,10 +573,14 @@ hr {
 }
 .header {
 	background-color: #000000;
-    height: 52px;
+    height: 52px ;
     padding-top: 30px;
     position: relative;
     z-index: 3;
+}
+.logout{
+	position: absolute;
+	padding: 60px;
 }
 .main-page .header {
 	background:#000 url(../img/bg/coffee.jpg) 28% 0 no-repeat;
