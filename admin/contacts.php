@@ -20,17 +20,41 @@
 	<!--[if lte IE 8]><link rel="stylesheet" href="../css/ie8.css" media="screen, projection"><![endif]-->
 
 	<!-- Jquery library -->
-	<script src="../js/jquery-1.8.2.min.js"></script>
+	<script src="../js/jquery_1.12.4.js"></script>
 	<!-- UI -->
 	<script src="../js/jquery-ui-1.9.0.custom.min.js"></script>
 	<!-- Widgets -->
 	<script src="../js/widgets.js"></script>
+	<script src="../js/bootstrap.js"></script>
 	<!-- Yandex map -->
-<!--	<script src="http://api-maps.yandex.ru/2.0/?load=package.standard&mode=debug&lang=ru-RU" ></script>-->
+	<script src="http://api-maps.yandex.ru/2.0/?load=package.standard&mode=debug&lang=ru-RU" ></script>
 	<!-- Main functions -->
 	<script src="../js/functions.js"></script>
 </head>
 <body>
+<!-- Trigger the modal with a button -->
+<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+	<div class="modal-dialog">
+
+		<!-- Modal content-->
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<h4 class="modal-title">Modal Header</h4>
+			</div>
+			<div class="modal-body">
+				<p>Some text in the modal.</p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+
+	</div>
+</div>
 <!-- wrapper -->
 <div class="wrapper">
 	<!-- header -->
