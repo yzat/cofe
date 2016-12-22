@@ -496,6 +496,11 @@ hr {
 	overflow:hidden;
 	zoom:1;
 }
+.contacts-edit{
+	position:absolute;
+	left:70%;
+	padding-top:5%;
+}
 /* overflow end */
 
 /* reset-ul */

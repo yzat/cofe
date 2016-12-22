@@ -1,6 +1,7 @@
 ﻿<?php
 	require __DIR__."/../header.php";
-	$contact=$db->get('contacts');
+	$contact=$db->getOne('contacts');
+	print_r($contact);
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -32,29 +33,7 @@
 	<script src="../js/functions.js"></script>
 </head>
 <body>
-<!-- Trigger the modal with a button -->
-<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
 
-<!-- Modal -->
-<div id="myModal" class="modal fade" role="dialog">
-	<div class="modal-dialog">
-
-		<!-- Modal content-->
-		<div class="modal-content">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal">&times;</button>
-				<h4 class="modal-title">Modal Header</h4>
-			</div>
-			<div class="modal-body">
-				<p>Some text in the modal.</p>
-			</div>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-			</div>
-		</div>
-
-	</div>
-</div>
 <!-- wrapper -->
 <div class="wrapper">
 	<!-- header -->
@@ -92,13 +71,17 @@
 			
 			<div class="contacts">
 				<h1>Контакты</h1>
+<!-- Trigger the modal with a button -->
+				<a data-toggle="modal" data-target="#modal_edit_contacts">
+					<span class="glyphicon glyphicon-pencil contacts-edit" style="font-size:25px"></span></p>
+				</a>
 				<strong>Компания "Professional Coffee Service"</strong>
-				<div class="location">БЦ "Верейская Плаза" <br/> Ул. Верейская 29,стр 154<br/> Москва, 121357</div>
+				<div class="location"><?php echo $contact['address_place'];?> <br/> <?php echo $contact['address_street'];?><br/> <?php echo $contact['address_country'];?></div>
 				<ul class="contacts-list">
-					<li><span>Офис:</span>+7 (499) 951-03-20</li>
-					<li><span>Email:</span><a href="mailto:info@pellini.ru">info@pellini.ru</a></li>
-					<li><span>Skype:</span><a href="skype:elenablack3">elenablack3</a></li>
-					<li><span>Facebook:</span><a href="www.facebook.com/pellinicaffe">www.facebook.com/pellinicaffe</a></li>
+					<li><span>Офис:</span><?php echo $contact['office'];?></li>
+					<li><span>Email:</span><a href="mailto:<?php echo $contact['e-mail'];?>"><?php echo $contact['e-mail'];?></a></li>
+					<li><span>Skype:</span><a href="skype:<?php echo $contact['skype'];?>"><?php echo $contact['skype'];?></a></li>
+					<li><span>Facebook:</span><a href="<?php echo $contact['facebook'];?>"><?php echo $contact['facebook'];?></a></li>
 				</ul>
 			</div>
 			
@@ -124,5 +107,55 @@
 	</div>
 </footer>
 <!-- footer end -->
+<!-- Modal -->
+<div id="modal_edit_contacts" class="modal fade" role="dialog">
+	<div class="modal-dialog">
+
+		<!-- Modal content-->
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<h4 class="modal-title">Edit Window</h4>
+			</div>
+			<div class="modal-body">
+				<form>
+					<div class="form-group">
+						<label for="address">location:</label>
+						<input type="text" name="address_place" value="<?php echo $contact['address_place'];?>" class="form-control" id="address_place"/>
+					</div>
+					<div class="form-group">
+						<label for="address">address_street:</label>
+						<input type="text" name="address_street" value="<?php echo $contact['address_street'];?>" class="form-control" id="address_street"/>
+					</div>
+					<div class="form-group">
+						<label for="address_country">country:</label>
+						<input type="text" name="address_country" value="<?php echo $contact['address_country'];?>" class="form-control" id="address_country"/>
+					</div>
+					<div class="form-group">
+						<label for="email">Email address:</label>
+						<input type="email" name="e-mail" value="<?php echo $contact['e-mail'];?>" class="form-control" id="email">
+					</div>
+					<div class="form-group">
+						<label for="text">office:</label>
+						<input type="text" name="office" value="<?php echo $contact['office'];?>" class="form-control" id="text">
+					</div>
+					<div class="form-group">
+						<label for="text">skype:</label>
+						<input type="text" name="skype" value="<?php echo $contact['skype'];?>" class="form-control" id="text">
+					</div>
+					<div class="form-group">
+						<label for="text">facebook:</label>
+						<input type="text" name="facebook" value="<?php echo $contact['facebook'];?>" class="form-control" id="text">
+					</div>
+					<button type="submit" class="btn btn-default">Edit</button>
+				</form>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+
+	</div>
+</div>
 </body>
 </html>
