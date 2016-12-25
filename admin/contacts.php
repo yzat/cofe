@@ -1,7 +1,7 @@
 ﻿<?php
 	require __DIR__."/../header.php";
 	$contact=$db->getOne('contacts');
-	print_r($contact);
+//	print_r($contact);
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -28,9 +28,10 @@
 	<script src="../js/widgets.js"></script>
 	<script src="../js/bootstrap.js"></script>
 	<!-- Yandex map -->
-	<script src="http://api-maps.yandex.ru/2.0/?load=package.standard&mode=debug&lang=ru-RU" ></script>
+<!--	<script src="http://api-maps.yandex.ru/2.0/?load=package.standard&mode=debug&lang=ru-RU" ></script>-->
 	<!-- Main functions -->
 	<script src="../js/functions.js"></script>
+	<script src="../js/function_action_forms.js"></script>
 </head>
 <body>
 
@@ -118,7 +119,7 @@
 				<h4 class="modal-title">Edit Window</h4>
 			</div>
 			<div class="modal-body">
-				<form>
+				<form id="form_edit_contacts" action="javascript:void(0)" onSubmit="javascript:edit_contacts(this); return false;">
 					<div class="form-group">
 						<label for="address">location:</label>
 						<input type="text" name="address_place" value="<?php echo $contact['address_place'];?>" class="form-control" id="address_place"/>
@@ -146,6 +147,7 @@
 					<div class="form-group">
 						<label for="text">facebook:</label>
 						<input type="text" name="facebook" value="<?php echo $contact['facebook'];?>" class="form-control" id="text">
+						<input type="hidden" name="target" value="form_edit_contact" class="form-control" >
 					</div>
 					<button type="submit" class="btn btn-default">Edit</button>
 				</form>
