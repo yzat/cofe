@@ -1,7 +1,6 @@
 ﻿<?php
-	require __DIR__."/../header.php";
+	require __DIR__."/header.php";
 	$contact=$db->getOne('contacts');
-//	print_r($contact);
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -67,25 +66,11 @@
 	<div class="content">
 		<!-- max-wrap -->
 		<div class="max-wrap">
-
 			<div class="map" data-left="42.858271" data-right="74.587462" data-zoom="15"></div>
-			
-			<div class="contacts">
-				<h1>Контакты</h1>
-<!-- Trigger the modal with a button -->
-				<a data-toggle="modal" data-target="#modal_edit_contacts">
-					<span class="glyphicon glyphicon-pencil contacts-edit" style="font-size:25px"></span></p>
-				</a>
-				<strong>Компания "Professional Coffee Service"</strong>
-				<div class="location"><?php echo $contact['address_place'];?> <br/> <?php echo $contact['address_street'];?><br/> <?php echo $contact['address_country'];?></div>
-				<ul class="contacts-list">
-					<li><span>Офис:</span><?php echo $contact['office'];?></li>
-					<li><span>Email:</span><a href="mailto:<?php echo $contact['e-mail'];?>"><?php echo $contact['e-mail'];?></a></li>
-					<li><span>Skype:</span><a href="skype:<?php echo $contact['skype'];?>"><?php echo $contact['skype'];?></a></li>
-					<li><span>Facebook:</span><a href="<?php echo $contact['facebook'];?>"><?php echo $contact['facebook'];?></a></li>
-				</ul>
-			</div>
-			
+			<div class="contacts">for load contacts</div>
+				<script>
+					$('.contacts').load('contacts_page.php');
+				</script>
 		</div>
 		<!-- max-wrap end -->
 	</div>
@@ -121,7 +106,15 @@
 			<div class="modal-body">
 				<form id="form_edit_contacts" action="javascript:void(0)" onSubmit="javascript:edit_contacts(this); return false;">
 					<div class="form-group">
-						<label for="address">location:</label>
+						<label for="legal_entity">Legal entity:</label>
+						<input type="text" name="legal_entity" value="<?php echo $contact['legal_entity'];?>" class="form-control" id="legal_entity"/>
+					</div>
+					<div class="form-group">
+						<label for="INN">INN/KPP:</label>
+						<input type="text" name="INN" value="<?php echo $contact['INN'];?>" class="form-control" id="INN"/>
+					</div>
+					<div class="form-group">
+						<label for="address">Location:</label>
 						<input type="text" name="address_place" value="<?php echo $contact['address_place'];?>" class="form-control" id="address_place"/>
 					</div>
 					<div class="form-group">

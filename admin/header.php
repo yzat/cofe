@@ -1,7 +1,8 @@
 <?php
 session_start();
 	if(empty($_SESSION['status'])){
-		echo "<script>window.location='../index.php'</script>";
+		header('Location: http://127.0.0.1/cofe/index.php');
+//		echo "<script>window.location='../index.php'</script>";
 	}
 error_reporting(0);
 ini_set('display_errors', 1);

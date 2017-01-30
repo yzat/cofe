@@ -812,7 +812,7 @@ hr {
 /* preview-product end */
 
 .map {
-	width:660px;
+	width:610px;
 	height:317px;
 	position:relative;
 	float:left;
@@ -822,7 +822,7 @@ hr {
 /* contacts */
 .contacts {
 	position: relative;
-    top: -9px;
+    top: -19px;
 }
 .contacts h1 {
 	font-family:helTH;
