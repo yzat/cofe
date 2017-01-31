@@ -27,7 +27,7 @@
 	<script src="../js/widgets.js"></script>
 	<script src="../js/bootstrap.js"></script>
 	<!-- Yandex map -->
-<!--	<script src="http://api-maps.yandex.ru/2.0/?load=package.standard&mode=debug&lang=ru-RU" ></script>-->
+	<script src="http://api-maps.yandex.ru/2.0/?load=package.standard&mode=debug&lang=ru-RU" ></script>
 	<!-- Main functions -->
 	<script src="../js/functions.js"></script>
 	<script src="../js/function_action_forms.js"></script>
