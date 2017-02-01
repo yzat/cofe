@@ -31,6 +31,19 @@ function edit_contacts(data){
                 $('.contacts').html(vstavka);
                 $('#modal_edit_contacts .close').click();
                 // $('#form_edit_contacts')[0].reset();
+                // set new data in footer
+                var zxc="<div class='max-wrap'>"+
+                            "<div class='footer-contacts'>"+
+                                "<span>"+data.office+"</span>"+
+                                "<span><a href='mailto:"+data.e_mail+"'>"+data.e_mail+"</a></span>"+
+                                "</div>"+
+                                "<div class='logo-footer'><a href=''><img src='../img/logo-footer.png' alt=''/></a></div>"+
+                                "<div class='location-footer'>"+
+                                ""+data.address_place+", <a href=''>"+data.address_street+" </a>"+
+                                "<div>"+data.detail_address+" ,  "+data.address_country+"</div>"+
+                            "</div>"+
+                        "</div>";
+                $("#footer").html(zxc);
                 // set value in form id=form_edit_contacts
                 $("#form_edit_contacts input[name=legal_entity]").val(data.legal_entity);
                 $("#form_edit_contacts input[name=INN]").val(data.INN);
@@ -42,8 +55,7 @@ function edit_contacts(data){
                 $("#form_edit_contacts input[name=e-mail]").val(data.e_mail);
                 $("#form_edit_contacts input[name=skype]").val(data.skype);
                 $("#form_edit_contacts input[name=facebook]").val(data.facebook);
-                // set new data in footer
-                
+
 
             }else if(data.error==1){
                 $('.contacts').text(data.failed);
