@@ -42,8 +42,9 @@ if($target_P=='form_edit_contact'){
 		$back['address_street']=$address_street;
 		$back['address_country']=$address_country;
 		$back['office']=$office;
-		$back['e-mail']=$e_mail;
+		$back['e_mail']=$e_mail;
 		$back['skype']=$skype;
+		$back['facebook']=$facebook;
 	}else{
 		$back['error']=1;
 		$back['failed']='update failed: ' . $db->getLastError();
