@@ -16,6 +16,8 @@ if($target_P=='form_edit_contact'){
 	$address_place1=nl2br(htmlspecialchars(trim($address_place)));
 	$address_street=$_POST['address_street'];
 	$address_street1=nl2br(htmlspecialchars(trim($address_street)));
+	$detail_address=$_POST['detail_address'];
+	$detail_address1=nl2br(htmlspecialchars(trim($detail_address)));
 	$address_country=$_POST['address_country'];
 	$address_country1=nl2br(htmlspecialchars(trim($address_country)));
 	$office=$_POST['office'];
@@ -27,6 +29,7 @@ if($target_P=='form_edit_contact'){
 		'INN'=>"$INN1",
 		'address_place'=>"$address_place1",
 		'address_street'=>"$address_street1",
+		'detail_address'=>"$detail_address1",
 		'address_country'=>"$address_country1",
 		'office'=>"$office",
 		'e-mail'=>"$e_mail",
@@ -40,6 +43,7 @@ if($target_P=='form_edit_contact'){
 		$back['INN']=$INN;
 		$back['address_place']=$address_place;
 		$back['address_street']=$address_street;
+		$back['detail_address']=$detail_address1;
 		$back['address_country']=$address_country;
 		$back['office']=$office;
 		$back['e_mail']=$e_mail;

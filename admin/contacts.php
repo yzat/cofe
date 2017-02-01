@@ -82,13 +82,13 @@
 <footer class="footer">
 	<div class="max-wrap">
 		<div class="footer-contacts">
-			<span>+7 (499) 951-03-20</span>
-			<span><a href="mailto:info@pellini.ru">info@pellini.ru</a></span>
+			<span><?php echo $contact['office']?></span>
+			<span><a href="mailto:<?php echo $contact['e-mail']?>"><?php echo $contact['e-mail']?></a></span>
 		</div>
 		<div class="logo-footer"><a href=""><img src="../img/logo-footer.png" alt=""/></a></div>
 		<div class="location-footer">
-			БЦ "Верейская Плаза", <a href="">ул. Верейская 29, стр 154 </a>
-			<div>офис 15, Москва, 121357</div>
+			<?php echo $contact['address_place']?>, <a href=""><?php echo $contact['address_street']?> </a>
+			<div><?php echo $contact['detail_address'] .",". $contact['address_country'];?></div>
 		</div>
 	</div>
 </footer>
@@ -120,6 +120,10 @@
 					<div class="form-group">
 						<label for="address">address_street:</label>
 						<input type="text" name="address_street" value="<?php echo $contact['address_street'];?>" class="form-control" id="address_street"/>
+					</div>
+					<div class="form-group">
+						<label for="address">detail_address:</label>
+						<input type="text" name="detail_address" value="<?php echo $contact['detail_address'];?>" class="form-control" id="address_street"/>
 					</div>
 					<div class="form-group">
 						<label for="address_country">country:</label>

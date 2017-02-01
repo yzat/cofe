@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1b50c8de-9d60-46d7-97ea-c9754699213f" name="Default" comment="edit contacts (contacts.php)&amp;header location iz-za togo shto ne peredavalsa json massiv_2">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/contacts.php" afterPath="$PROJECT_DIR$/admin/contacts.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/process.php" afterPath="$PROJECT_DIR$/admin/process.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/function_action_forms.js" afterPath="$PROJECT_DIR$/js/function_action_forms.js" />
     </list>
@@ -36,8 +36,8 @@
       <file leaf-file-name="process.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/process.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1276">
-              <caret line="44" column="17" selection-start-line="44" selection-start-column="17" selection-end-line="44" selection-end-column="17" />
+            <state relative-caret-position="137">
+              <caret line="45" column="49" selection-start-line="45" selection-start-column="49" selection-end-line="45" selection-end-column="49" />
               <folding />
             </state>
           </provider>
@@ -76,9 +76,27 @@
       <file leaf-file-name="contacts.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/admin/contacts.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="464">
-              <caret line="19" column="106" selection-start-line="19" selection-start-column="106" selection-end-line="19" selection-end-column="106" />
-              <folding />
+            <state relative-caret-position="95">
+              <caret line="82" column="26" selection-start-line="82" selection-start-column="26" selection-end-line="82" selection-end-column="26" />
+              <folding>
+                <marker date="1485921839870" expanded="true" signature="2991:3542" ph="..." />
+                <marker date="1485921839870" expanded="true" signature="3019:3542" ph="..." />
+                <marker date="1485921839870" expanded="true" signature="3074:3542" ph="..." />
+                <marker date="1485921839870" expanded="true" signature="3104:3237" ph="..." />
+                <marker date="1485921839870" expanded="true" signature="3265:3542" ph="..." />
+                <marker date="1485921839870" expanded="true" signature="3385:3542" ph="..." />
+                <marker date="1485921839870" expanded="true" signature="3415:3542" ph="..." />
+                <marker date="1485921839870" expanded="true" signature="3644:3748" ph="..." />
+                <marker date="1485921839870" expanded="true" signature="3832:3951" ph="..." />
+                <marker date="1485921839870" expanded="true" signature="4055:4181" ph="..." />
+                <marker date="1485921839870" expanded="true" signature="4287:4413" ph="..." />
+                <marker date="1485921839870" expanded="true" signature="4519:4647" ph="..." />
+                <marker date="1485921839870" expanded="true" signature="4755:4871" ph="..." />
+                <marker date="1485921839870" expanded="true" signature="4959:5066" ph="..." />
+                <marker date="1485921839870" expanded="true" signature="5153:5258" ph="..." />
+                <marker date="1485921839870" expanded="true" signature="5344:5455" ph="..." />
+                <marker date="1485921839870" expanded="true" signature="5721:5817" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -86,11 +104,11 @@
       <file leaf-file-name="function_action_forms.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/function_action_forms.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1276">
-              <caret line="44" column="16" selection-start-line="44" selection-start-column="16" selection-end-line="44" selection-end-column="16" />
+            <state relative-caret-position="603">
+              <caret line="34" column="89" selection-start-line="34" selection-start-column="89" selection-end-line="34" selection-end-column="89" />
               <folding>
-                <marker date="1485858302642" expanded="true" signature="628:642" ph="..." />
-                <marker date="1485858302642" expanded="true" signature="846:861" ph="..." />
+                <marker date="1485920393690" expanded="true" signature="628:642" ph="..." />
+                <marker date="1485920393690" expanded="true" signature="846:861" ph="..." />
               </folding>
             </state>
           </provider>
@@ -155,8 +173,8 @@
         <option value="$PROJECT_DIR$/css/all.css" />
         <option value="$PROJECT_DIR$/admin/contacts_page.php" />
         <option value="$PROJECT_DIR$/admin/process.php" />
-        <option value="$PROJECT_DIR$/admin/contacts.php" />
         <option value="$PROJECT_DIR$/js/function_action_forms.js" />
+        <option value="$PROJECT_DIR$/admin/contacts.php" />
       </list>
     </option>
   </component>
@@ -319,7 +337,7 @@
       <workItem from="1484912502908" duration="12362000" />
       <workItem from="1485849748794" duration="7540000" />
       <workItem from="1485918531991" duration="207000" />
-      <workItem from="1485918741015" duration="50000" />
+      <workItem from="1485918741015" duration="2391000" />
     </task>
     <task id="LOCAL-00001" summary="link contact with database  and get data from DB">
       <created>1482429903331</created>
@@ -360,7 +378,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="229517000" />
+    <option name="totallyTimeSpent" value="231858000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -372,7 +390,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1604" height="876" extended-state="1" />
+    <frame x="-8" y="-8" width="1604" height="876" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16213992" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -641,28 +659,46 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/process.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1276">
-          <caret line="44" column="17" selection-start-line="44" selection-start-column="17" selection-end-line="44" selection-end-column="17" />
+        <state relative-caret-position="137">
+          <caret line="45" column="49" selection-start-line="45" selection-start-column="49" selection-end-line="45" selection-end-column="49" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/function_action_forms.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1276">
-          <caret line="44" column="16" selection-start-line="44" selection-start-column="16" selection-end-line="44" selection-end-column="16" />
+        <state relative-caret-position="603">
+          <caret line="34" column="89" selection-start-line="34" selection-start-column="89" selection-end-line="34" selection-end-column="89" />
           <folding>
-            <marker date="1485858302642" expanded="true" signature="628:642" ph="..." />
-            <marker date="1485858302642" expanded="true" signature="846:861" ph="..." />
+            <marker date="1485920393690" expanded="true" signature="628:642" ph="..." />
+            <marker date="1485920393690" expanded="true" signature="846:861" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/contacts.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="19" column="106" selection-start-line="19" selection-start-column="106" selection-end-line="19" selection-end-column="106" />
-          <folding />
+        <state relative-caret-position="95">
+          <caret line="82" column="26" selection-start-line="82" selection-start-column="26" selection-end-line="82" selection-end-column="26" />
+          <folding>
+            <marker date="1485921839870" expanded="true" signature="2991:3542" ph="..." />
+            <marker date="1485921839870" expanded="true" signature="3019:3542" ph="..." />
+            <marker date="1485921839870" expanded="true" signature="3074:3542" ph="..." />
+            <marker date="1485921839870" expanded="true" signature="3104:3237" ph="..." />
+            <marker date="1485921839870" expanded="true" signature="3265:3542" ph="..." />
+            <marker date="1485921839870" expanded="true" signature="3385:3542" ph="..." />
+            <marker date="1485921839870" expanded="true" signature="3415:3542" ph="..." />
+            <marker date="1485921839870" expanded="true" signature="3644:3748" ph="..." />
+            <marker date="1485921839870" expanded="true" signature="3832:3951" ph="..." />
+            <marker date="1485921839870" expanded="true" signature="4055:4181" ph="..." />
+            <marker date="1485921839870" expanded="true" signature="4287:4413" ph="..." />
+            <marker date="1485921839870" expanded="true" signature="4519:4647" ph="..." />
+            <marker date="1485921839870" expanded="true" signature="4755:4871" ph="..." />
+            <marker date="1485921839870" expanded="true" signature="4959:5066" ph="..." />
+            <marker date="1485921839870" expanded="true" signature="5153:5258" ph="..." />
+            <marker date="1485921839870" expanded="true" signature="5344:5455" ph="..." />
+            <marker date="1485921839870" expanded="true" signature="5721:5817" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

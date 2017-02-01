@@ -36,6 +36,7 @@ function edit_contacts(data){
                 $("#form_edit_contacts input[name=INN]").val(data.INN);
                 $("#form_edit_contacts input[name=address_place]").val(data.address_place);
                 $("#form_edit_contacts input[name=address_street]").val(data.address_street);
+                $("#form_edit_contacts input[name=detail_address]").val(data.detail_address);
                 $("#form_edit_contacts input[name=address_country]").val(data.address_country);
                 $("#form_edit_contacts input[name=office]").val(data.office);
                 $("#form_edit_contacts input[name=e-mail]").val(data.e_mail);
